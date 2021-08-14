@@ -1,0 +1,1 @@
+﻿Server=batyr.db.elephantsql.com;database=apdrwjmm;UserID=apdrwjmm;Password=aI7KAbVVIzhyeXHhvnAIeEQZmEschyFM
