@@ -19,7 +19,7 @@ namespace DataLogic
         public DbSet<Product> Products {get; set;}
         public DbSet<StoreFront> StoreFronts {get; set;}
 
-        private readonly string connectionString = System.IO.File.ReadAllText(Directory.GetCurrentDirectory() + "\\connectionString.txt");
+        private readonly string connectionString = System.IO.File.ReadAllText(Directory.GetCurrentDirectory() + @"\connectionString.txt");
 
         // Liskov Substitution Principle
         public DBContext() : base()
