@@ -19,7 +19,7 @@ namespace DataLogic
         public DbSet<Product> Products {get; set;}
         public DbSet<StoreFront> StoreFronts {get; set;}
 
-        private readonly string connectionString = System.IO.File.ReadAllText(Directory.GetCurrentDirectory() + @"\connectionString.txt");
+        
 
         // Liskov Substitution Principle
         public DBContext() : base()
@@ -37,7 +37,7 @@ namespace DataLogic
         //Toggle this every time doing a new migration
         protected override void OnConfiguring(DbContextOptionsBuilder p_options)
         {
-            p_options.UseNpgsql(connectionString);
+            p_options.UseNpgsql(@"Server=batyr.db.elephantsql.com;database=apdrwjmm;UserID=apdrwjmm;Password=aI7KAbVVIzhyeXHhvnAIeEQZmEschyFM");
         }
 
 
