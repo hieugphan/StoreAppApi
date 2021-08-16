@@ -1,2 +1,0 @@
-﻿public readonly string connectionString = System.IO.File.ReadAllText(Directory.GetCurrentDirectory() + @"\connectionString.txt");
-Server=batyr.db.elephantsql.com;database=apdrwjmm;UserID=apdrwjmm;Password=aI7KAbVVIzhyeXHhvnAIeEQZmEschyFM
