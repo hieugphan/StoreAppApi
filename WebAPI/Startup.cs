@@ -54,7 +54,7 @@ namespace WebAPI
                     //this is where you add trusted domain
                     builder.AddDefaultPolicy((policy) =>
                     {
-                        policy.WithOrigins("http://127.0.0.1:4200", "https://hieuphanrrangular.azurewebsites.net/") //This is where you create the address that you want to trust
+                        policy.WithOrigins("http://127.0.0.1:4200", "https://hieuphanrrangular.azurewebsites.net/", "https://40.89.243.164/", "http://40.89.243.164/") //This is where you create the address that you want to trust
                             .AllowAnyHeader() //Allows any header
                             .AllowAnyMethod(); //Allows any http verb method
                     });
